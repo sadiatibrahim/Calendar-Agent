@@ -2,7 +2,7 @@
 
 An AI agent built with the Agents SDK for intelligent calendar and task management. The agent understands natural language requests, autonomously decides which tools to use, and manages your schedule efficiently. It can process text messages and extract information from images and PDFs using vision capabilities.
 
-## 🚀 Features
+## Features
 
 - **Autonomous AI Agent**: Uses the Agents SDK to intelligently orchestrate calendar operations
 - **Natural Language Understanding**: Interact with your calendar using conversational language
@@ -14,7 +14,7 @@ An AI agent built with the Agents SDK for intelligent calendar and task manageme
 - **Conversation Context**: Maintains multi-turn conversation history across interactions
 - **Modern UI**: Clean, responsive React-based chat interface
 
-## 🏗️ Architecture
+## Architecture
 
 ### Backend (Python FastAPI)
 - **AI Agent**: Built with the Agents SDK for autonomous tool selection and execution
@@ -31,7 +31,7 @@ An AI agent built with the Agents SDK for intelligent calendar and task manageme
 - **File Upload**: Drag-and-drop or click to upload files
 - **Real-time Updates**: Instant feedback and typing indicators
 
-## 📋 Prerequisites
+## Prerequisites
 
 - Python 3.8+
 - Node.js 18+
@@ -39,7 +39,7 @@ An AI agent built with the Agents SDK for intelligent calendar and task manageme
 - Google Calendar API credentials (credentials.json)
 - Agents SDK (`pip install agents-sdk`)
 
-## 🛠️ Setup
+## Setup
 
 ### Backend Setup
 
@@ -100,7 +100,7 @@ npm run dev
 ```
 The frontend will run on `http://localhost:3000`
 
-## 💡 Usage
+## Usage
 
 1. Open your browser and navigate to `http://localhost:3000`
 2. Chat with the AI agent in natural language:
@@ -111,7 +111,7 @@ The frontend will run on `http://localhost:3000`
 3. Upload images or PDFs containing calendar information
 4. The agent will autonomously select the right tools and update your Google Calendar
 
-## 🤖 How the AI Agent Works
+## How the AI Agent Works
 
 The Calendar Agent uses the Agents SDK to:
 1. **Understand Intent**: Analyzes your message to determine what you want to do
@@ -120,7 +120,7 @@ The Calendar Agent uses the Agents SDK to:
 4. **Maintain Context**: Remembers previous conversations using `result.to_input_list()`
 5. **Provide Feedback**: Confirms actions and provides clear responses
 
-## 🔧 Available Tools
+## Available Tools
 
 The AI assistant has access to the following tools:
 
@@ -132,7 +132,7 @@ The AI assistant has access to the following tools:
 - **complete_task**: Mark tasks as completed
 - **delete_task**: Remove tasks from the list
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 Calendar-Agent/
@@ -156,18 +156,3 @@ Calendar-Agent/
 │   └── vite.config.ts          # Vite configuration
 └── README.md
 ```
-
-## 🔐 Security Notes
-
-- Keep your `credentials.json` and `token.json` files secure and never commit them to version control
-- Store your OpenAI API key in environment variables, not in code
-- Update CORS settings in production to restrict origins
-- The `.gitignore` file is configured to exclude sensitive files
-
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit issues or pull requests.
-
-## 📄 License
-
-This project is provided as-is for educational and personal use.
